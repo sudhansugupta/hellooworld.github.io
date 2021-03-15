@@ -63,12 +63,13 @@
 	font-size: 30px;
 	text-decoration: none;
 }
-.btn{
+.btn_1{
 	border: 1px solid #ff7800 !important;
 	background: #ff7800 !important;
-	padding: 3px 25px !important;
-	margin-left: -30px !important;
+	padding: 5px 25px !important;
+	margin-left: !important;
 }
+
 .contaner_box{
 	margin-top: 50px !important;
 	
@@ -273,7 +274,7 @@
 	font-size: 15px;
 	text-decoration: none;
 }
-.btn{
+.btn_1{
 	border: 1px solid #ff7800 !important;
 	background: #ff7800 !important;
 	padding: 3px 25px !important;

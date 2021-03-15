@@ -35,24 +35,73 @@
           <div class="contaner_box_text  ">
             <h1>What is your Zip Code?</h1>
           </div>
+
       <!------------------------------------ form sec ----------------------------------->
-              <div class="form justify-content-center">
-              <form class="row d-flex mx-auto justify-content-center ">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-10 d-block mx-auto">
-                  
-                  <input type="text" class="form-control " id="autoSizingInput" placeholder="please enter your zip code">
+    <div class="divis">
+	<div class="justify-content-center text-center mx-auto">
+
+<body onload="shows_form_part(1)"></body>
+
+
+
+<form>
+  <div id="form_part1">
+  
+    <!--form elements 1-->
+
+     <div class="xxx justify-content-center ">
+              <form class="row">
+                <div class="col-lg-9  col-md-9 col-sm-7 col-10  d-block mx-auto">
+                  <input class="col-lg-9 col-10  " type="text" class=" form-control " id="autoSizingInput" placeholder="please enter your zip code">
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
-                  <button type="button" class="btn text-white btn-lg">NEXT</button>
-                </div>
-            
-            <div class="textback"><a href="#"> ← back </a></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto justify-content-center mt-3  ">
+                  <button class="btn_1 btn-lg  text-white fw-bolder" type="button" onclick="shows_form_part(2)"> NEXT</button>
+                </div>  
           </div>
         </form>
+   	 </div>
+   	</form>
+
+  <div id="form_part2">
+    
+         <div class="form justify-content-center">
+              <form class="row d-flex mx-auto justify-content-center ">
+                <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
+               <input type="text" class="form-control " id="autoSizingInput" placeholder="please enter your zip code">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
+                 <button class="btn_1 text-white fw-bolder" type="button" onclick="shows_form_part(3)">NEXT</button>
+                </div>
+           <button class="textback col-6 btn "  type="button" onclick="shows_form_part(1)">← back</button>
+          </div>
+        </form>
+        </div>
+        </form>
+
+    <!--form elements 2-->
+    
+     </div>
+  <div id="form_part3">
+    
+     <div class="form justify-content-center">
+              <form class="row d-flex mx-auto justify-content-center ">
+                <div class="col-lg-9 col-md-9 col-sm-7 col-10 d-block mx-auto">
+               <input type="text" class="form-control " id="autoSizingInput" placeholder="please enter your zip code">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block mx-auto pe-auto ">
+                 <button class="btn_1  text-white fw-bolder" type="button" onclick="submit_form()">SUBMIT</button>
+                </div>
+           <button class="textback col-6 btn "  type="button" onclick="shows_form_part(2)">← back</button>
+          </div>
+        </form>
+        </div>
+</form>
+</div>
+          
      <!------------------------------------ form sec ----------------------------------->
 
-          </div>
          
+         </div>
           <div class="person_det d-flex">
             <div class="person_img">
               <img src="img/personimg.png" height="62px" width="62px">
@@ -387,6 +436,31 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!--js for step form---->
+ <script type="text/javascript">
+function shows_form_part(n){
+    var i = 1, p = document.getElementById("form_part"+1);
+    while (p !== null){
+        if (i === n){
+            p.style.display = "";
+        }
+        else{
+            p.style.display = "none";
+        }
+        i++;
+        p = document.getElementById("form_part"+i);
+    }
+}
+
+function submit_form() {
+	var sum = parseInt(document.getElementById("num1").value) +
+            parseInt(document.getElementById("num2").value) +
+            parseInt(document.getElementById("num3").value);
+  alert("Your result is: " + sum);
+}
+</script>
+     <!--js for step form---->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

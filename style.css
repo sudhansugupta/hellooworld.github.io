@@ -18,11 +18,12 @@
     margin: 20px 80px;
 }
 .carousel-indicators button{
-    margin-top: -70px !important;
+    margin-top: -90px !important;
 }
 
 .carousel-inner img{
-    height: 600px !important;
+    max-width: 100% !important;
+	height: auto !important;
 }
 /*------------------------------header end--------------------------------*/
 /*------------------------------THE BRAND STORY start--------------------------------*/
@@ -253,6 +254,9 @@
       
         
     }
+	.carousel-indicators button{
+		margin-top: -20px !important;
+	}
 /*------------------------------header end--------------------------------*/
  .object_text h2{
 	color: #c9a976;
@@ -409,9 +413,11 @@
 .btn1{
 	border:2px solid white !important;
 	background-color: transparent;
-	padding: 5px;
+	padding: 2px;
 	color: white;
 	border-radius: 5px;
+	width: 55px !important;
+	font-size: 8px !important;
 }
 .email_dec{
 	background-color: transparent !important;
